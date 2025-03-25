@@ -1,0 +1,158 @@
+html {
+    min-height: 100vh;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #689CD2;
+    color: #fff;
+}
+main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.header-section {
+    display: flex;
+    align-items: end;
+}
+
+.header-item:not(:first-child), .header-btn {
+    padding: 10px 15px;
+    font-size: 18px;
+    margin-left: 0;
+    border-radius: 8px;
+}
+.header-logo {
+    font-size: 42px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+}
+
+.header-item:not(:first-child):hover, .header-btn:hover {
+    background-color: #8fb9e6;
+}
+
+.header-btn {
+    cursor: pointer;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 90vh;
+    width: 150px;
+    border-right: 1px solid #D7DBDD;
+    background-color: #FCFDFD;
+    padding: 10px;
+}
+
+.side-bar-item {
+    cursor: pointer;
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.side-bar a {
+    color: #689CD2;
+}
+
+.side-bar-item:hover {
+    background-color: #EEF3F5;
+
+}
+body {
+    background-color: #333;
+    height: 2000px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    flex-basis: 100%;
+    padding: 2em;
+    background:  white;
+    box-shadow: 0 0 2em rgb(0 0 0 / 0.2);
+    border-radius: 0.25em;
+}
+
+input {
+    padding: 0.5em;
+    font-size: 0.875em;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-width: 1px 1px 1px 0;
+    border-radius: 4px;
+}
+input:focus {
+    background: #fff;
+    box-shadow: inset 0.1em 0.1em 0.1em 0.25em rgb(0 0 0 / .2);
+    outline: 0;
+}
+.form-field {
+    margin-bottom: 1em;
+    display: flex;
+}
+.form-field label {
+    flex: 0 1 4em;
+    padding: 1em;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 0.25em 0 0 0.25em;
+    font-size: 0.75em;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    line-height: 1;
+}
+
+.form-field input {
+    flex-grow: 1;
+}
+
+.input-right input, .multi-input input {
+    border-radius: 0 0.25em 0.25em 0 ;
+}
+
+.submit-field {
+    flex-direction: row;
+    justify-content: center;
+}
+
+input[type="submit"] {
+    flex: 1 40%;
+    padding: 0.8em;
+    font-size: 1.2rem;
+    text-shadow: 0 1px 0 #fff;
+    background: #689CD2;
+    color: #fff;
+    border-radius: 0.25em;
+    border: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #8fb9e6;
+}

@@ -1,0 +1,199 @@
+html {
+    min-height: 100vh;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #689CD2;
+    color: #fff;
+}
+main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.header-section {
+    display: flex;
+    align-items: end;
+}
+
+.header-item:not(:first-child), .header-btn {
+    padding: 10px 15px;
+    font-size: 18px;
+    margin-left: 0;
+    border-radius: 8px;
+}
+.header-logo {
+    font-size: 42px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+}
+
+.header-item:not(:first-child):hover, .header-btn:hover {
+    background-color: #8fb9e6;
+}
+
+.header-btn {
+    cursor: pointer;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 90vh;
+    width: 150px;
+    border-right: 1px solid #D7DBDD;
+    background-color: #FCFDFD;
+    padding: 10px;
+}
+
+.side-bar-item {
+    cursor: pointer;
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.side-bar a {
+    color: #689CD2;
+}
+
+.side-bar-item:hover {
+    background-color: #EEF3F5;
+
+}
+body {
+    background-color: #333;
+    height: 2000px;
+}
+
+.container h3 {
+    margin: 0;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+* {
+    transition-property: background-color, border-color, box-shadow, color, opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.container {
+    min-width: 1100px;
+    margin: 0 auto;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding: 1.5%;
+    box-sizing: border-box;
+}
+
+.card {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    background-color: #fefff9;
+    color: #363636;
+    text-decoration: none;
+    box-shadow: rgb(0, 0, 0, 0, 19) 0 0 8px 0;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 700px) {
+    .card {
+        max-width: 320px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.card span {
+    display: block;
+}
+
+.card .card-summary {
+    padding: 5% 5% 3% 5%;
+}
+
+.card-header {
+    position: relative;
+    height: 175px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(255 255 255 0 / 0.15);
+    background-blend-mode: overlay;
+    border-radius: 4px 4px 0 0;
+}
+
+.card .card-header:hover, .card .card-header:focus {
+    background-color: rgb(255 255 255 0 / 0);
+}
+
+.card .card-title {
+    background: rgb(104 156 210 / 0.85);
+    padding: 3.5% 0 2.5% 0;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.card .card-title {
+    font-size: 1.2em;
+    line-height: 1.2;
+    padding: 0 3.5%;
+    margin: 0;
+}
+
+.card-meta {
+    max-height: 0;
+    overflow: hidden;
+    color: #666;
+    font-size: .78em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 5%;
+    padding: 0 5%;
+    transition-property: max-height;
+    transition-duration: 0,4s;
+    transition-timing-function: ease-in-out;
+}
+.card:hover, .card:focud {
+    background: white;
+    box-shadow: rgb( 0 0 0 0 / 0.45) 0px 0px 20px 0px;
+}
+
+.card:hover .card-title, .card:focus .card-title {
+    background: rgb(104 156 210 / 0.56);
+}
